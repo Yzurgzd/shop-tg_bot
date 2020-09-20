@@ -1,0 +1,35 @@
+from aiogram.dispatcher.filters.state import State, StatesGroup
+
+
+# Переменные принимающие значения от пользователя
+class Form(StatesGroup):
+    txtStart = State()  # Будут представлены в хранилище в виде 'Form:name'
+    txtPay = State()
+    txtPayTest = State()
+    txtCheck = State()
+    txtCheckFail = State()
+    txtMain = State()
+    txtCatalog = State()
+    txtManager = State()
+    txtCat = State()
+    txtItemsMiss = State()
+    txtBtnItems = State()
+    txtBtnTestPay = State()
+    txtBtnMngr = State()
+    txtBtnMain = State()
+    txtBtnCatalog = State()
+    txtBtnSendMngr = State()
+    txtBtnGoPay = State()
+    txtBtnCheckPay = State()
+    txtCatItem = State()
+    txtDesItem = State()
+    txtAdd = State()
+    txtDel = State()
+    txtAddCat = State()
+    txtDelCat = State()
+    txtWal = State()
+    txtWalToken = State()
+    txtAdminId = State()
+    txtGroupId = State()
+    txtMngrId = State()
+    txtSend = State()
